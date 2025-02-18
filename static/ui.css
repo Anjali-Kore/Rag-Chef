@@ -1,0 +1,78 @@
+body{
+    background-color:#f7c64c !important;
+    color:#481e14 !important;
+    /* Background images */
+    background-image: 
+        url("https://abs.twimg.com/emoji/v2/72x72/1f355.png"), /* Pizza */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f354.png"), /* Burger */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f35f.png"), /* Fries */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f36a.png"), /* Cookie */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f34e.png"), /* Apple */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f36d.png"), /* Lollipop */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f369.png"), /* Donut */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f382.png"), /* Cake */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f35a.png"), /* Rice */
+        url("https://abs.twimg.com/emoji/v2/72x72/1f95e.png"); /* Pancakes */
+
+    /* Positioning emojis */
+    background-position: 
+        50% 120%,  /* Bottom Left - pIZZA*/
+        70% 150%,  /* Bottom Center - BURGER */
+        7% 60%,  /* Bottom Right - FRIES */
+        95% 180%,   /* Left Middle - Cookie */
+        95% 90%,  /* Right Middle - Apple */
+        2% 100%,  /* Top Left - Lollipop */
+        80% 50%,  /* Top Right - Donut */
+        35%  180%,  /* Near Top Center - Cake */
+        10% 185%,  /* Middle Left - Rice */
+        20% 135%;  /* Middle Right - Pancakes */
+
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+   
+
+h1{
+    text-align:center;
+    padding-top: 50px;
+    font-family:"Rubik",serif;
+    font-weight:600;
+    padding-bottom: 50px;
+}
+.card{
+    margin:auto;
+    display: block;
+   width:55rem !important;
+   height:20rem;
+   background-color: #ffeb99 !important;
+   border: 2px solid #3f2a1b !important;
+   font-size: larger;
+   font-family: "Rubik",serif;
+   
+   
+}
+
+.form-control {
+    width: 300px !important; /* Adjust width, e.g., 80% or any fixed value */
+    height:35px !important; /* Adjust height, default is around 38px */
+    font-size: 16px; /* Increase font size if needed */
+    padding: 10px; 
+    margin: 0 auto; /* This centers the input horizontally */
+    margin-bottom:0px auto; /* This centers the input horizontally */
+    display: block; / /* Adjust padding for better spacing */
+}
+
+.button{
+    display: block;
+    margin: auto; 
+    margin-top: 1.5rem !important;
+
+}
+
+#recipeText {
+    word-wrap: break-word;  /* Ensures long words break */
+    white-space: pre-wrap;  /* Preserves formatting */
+    max-height: 150px;      /* Limits height */
+    overflow-y: auto;       /* Enables vertical scrolling if needed */
+}
+
