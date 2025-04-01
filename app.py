@@ -9,8 +9,6 @@ from langchain_nvidia_ai_endpoints import ChatNVIDIA
 
 app=Flask(__name__)
 
-os.environ["NVIDIA_API_KEY"] = "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"
-os.environ["NVIDIA_API_KEY"] = "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"
 
 
 embeddings = SpacyEmbeddings(model_name="en_core_web_sm")
