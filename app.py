@@ -5,12 +5,11 @@ from langchain_community.vectorstores import DeepLake
 from langchain.chains import RetrievalQA
 from langchain.prompts import ChatPromptTemplate
 from langchain_nvidia_ai_endpoints import ChatNVIDIA
+from dotenv import load_dotenv
+load_dotenv()
 
 
 app=Flask(__name__)
-
-os.environ["NVIDIA_API_KEY"] = "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"
-os.environ["NVIDIA_API_KEY"] = "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"
 
 
 embeddings = SpacyEmbeddings(model_name="en_core_web_sm")
@@ -22,7 +21,7 @@ db = DeepLake(dataset_path="./my_deeplake/my_deeplake/", embedding=embeddings, r
 system_prompt = (
     """You are an assistant that provides recipes based on available ingredients and desired cuisine. 
     Use the following pieces of retrieved context to answer the question. If you don't know the answer, say that you don't know.\n\n
-    {context}. Also provide the directions to make that recipe"""
+    {context}. Also provide the directions to make that recipe. Make sure to only use the ingredients provided  and for optional ingredients in the recipe tag them as optional in the response remember to use basic ingredients that are usually available in all homes"""
 )
 
 prompt = ChatPromptTemplate.from_messages([
