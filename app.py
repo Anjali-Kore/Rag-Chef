@@ -11,7 +11,6 @@ load_dotenv()
 
 app=Flask(__name__)
 
-
 embeddings = SpacyEmbeddings(model_name="en_core_web_sm")
 llm = ChatNVIDIA(model="nvidia/llama-3.1-nemotron-51b-instruct")
 
